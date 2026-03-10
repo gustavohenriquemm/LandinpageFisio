@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clínica Nova Fisio — Fisioterapia e Reabilitação</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ======================== HEADER ======================== -->
+  <header class="header">
+    <div class="container header-inner">
+      <!-- Logo -->
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-shoe-prints"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Clínica Nova Fisio</span>
+          <span class="logo-sub">Fisioterapia &amp; Reabilitação</span>
+        </div>
+      </div>
+
+      <!-- Menu central -->
+      <nav class="nav">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão -->
+      <a href="#contato-form" class="btn-header btn-agendar">Agendar Consulta</a>
+
+      <!-- Hamburguer mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <!-- Lado esquerdo -->
+      <div class="hero-text">
+        <h1>Tratamentos de Fisioterapia para uma <span>Vida Sem Dor</span></h1>
+        <p class="hero-subtitle">Oferecemos tratamentos modernos de fisioterapia para recuperação muscular, mobilidade e qualidade de vida.</p>
+        <p class="hero-desc">Nossa equipe de especialistas desenvolve planos personalizados de tratamento, respeitando o ritmo e as necessidades de cada paciente para resultados reais e duradouros.</p>
+        <a href="#sobre" class="btn-primary">Conheça Nossa Clínica</a>
+
+        
+
+        <!-- Estatísticas -->
+        <div class="stats">
+          <div class="stat-item">
+            <span class="stat-number">4500+</span>
+            <span class="stat-label">Pacientes Atendidos</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">200+</span>
+            <span class="stat-label">Tratamentos Realizados</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Reabilitações Completas</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Especialistas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lado direito -->
+      <div class="hero-image">
+        <div class="hero-photo">
+          <img src="img/Ingfisioprincipal.png" alt="Fisioterapeuta sorrindo" />
+        </div>
+        <!-- Badge flutuante -->
+        <div class="hero-badge badge-top">
+          <i class="fas fa-star"></i>
+          <div>
+            <strong>4.9 / 5.0</strong>
+            <span>Avaliação dos pacientes</span>
+          </div>
+        </div>
+        <div class="hero-badge badge-bottom">
+          <i class="fas fa-shield-alt"></i>
+          <div>
+            <strong>+10 Anos</strong>
+            <span>De experiência</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorações -->
+    <div class="deco deco-pulse deco-1"></div>
+    <div class="deco deco-pulse deco-2"></div>
+  </section>
+
+  <!-- ======================== FILTRO DE CONSULTA ======================== -->
+  <section class="filter-bar" id="agendar">
+    <div class="container filter-inner">
+      <div class="filter-field">
+        <i class="fas fa-stethoscope"></i>
+        <select>
+          <option value="">Selecionar Tratamento</option>
+          <option>Reabilitação Muscular</option>
+          <option>Fisioterapia Ortopédica</option>
+          <option>Fisioterapia Respiratória</option>
+          <option>Fisioterapia Esportiva</option>
+          <option>Reabilitação da Coluna</option>
+        </select>
+      </div>
+      <div class="filter-field">
+        <i class="fas fa-user-md"></i>
+        <select>
+          <option value="">Selecionar Especialista</option>
+          <option>Dr. Carlos Andrade</option>
+          <option>Dra. Ana Souza</option>
+          <option>Dr. Roberto Lima</option>
+          <option>Dra. Juliana Martins</option>
+        </select>
+      </div>
+      <div class="filter-field">
+        <i class="fas fa-calendar-alt"></i>
+        <input type="date" />
+      </div>
+      <div class="filter-field">
+        <i class="fas fa-map-marker-alt"></i>
+        <select>
+          <option value="">Selecionar Unidade</option>
+          <option>Unidade Centro</option>
+          <option>Unidade Zona Sul</option>
+          <option>Unidade Zona Norte</option>
+        </select>
+      </div>
+      <button class="btn-filter">
+        <i class="fas fa-search"></i> Buscar
+      </button>
+    </div>
+  </section>
+
+  <!-- ======================== ESPECIALIDADES ======================== -->
+  <section class="especialidades section" id="especialidades">
+    <div class="container">
+      <div class="section-header">
+        <h2>Especialidades em Fisioterapia</h2>
+        <p>Escolha o tratamento ideal para sua recuperação</p>
+      </div>
+      <div class="especialidades-grid">
+        <div class="esp-card">
+          <div class="esp-icon"><i class="fas fa-shoe-prints"></i></div>
+          <span>Fisioterapia para Pés</span>
+        </div>
+        <div class="esp-card">
+          <div class="esp-icon"><i class="fas fa-heartbeat"></i></div>
+          <span>Fisioterapia Cardíaca</span>
+        </div>
+        <div class="esp-card">
+          <div class="esp-icon"><i class="fas fa-lungs"></i></div>
+          <span>Fisioterapia Respiratória</span>
+        </div>
+        <div class="esp-card">
+          <div class="esp-icon"><i class="fas fa-layer-group"></i></div>
+          <span>Reabilitação da Coluna</span>
+        </div>
+        <div class="esp-card">
+          <div class="esp-icon"><i class="fas fa-brain"></i></div>
+          <span>Fisioterapia Neurológica</span>
+        </div>
+        <div class="esp-card">
+          <div class="esp-icon"><i class="fas fa-person-walking"></i></div>
+          <span>Fisioterapia do Joelho</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SERVIÇOS PRINCIPAIS ======================== -->
+  <section class="servicos section" id="servicos">
+    <div class="container servicos-inner">
+      <!-- Lado esquerdo -->
+      <div class="servicos-text">
+        <h2>Serviços de Fisioterapia para sua recuperação</h2>
+        <p>Contamos com uma equipe multidisciplinar e equipamentos modernos para oferecer tratamentos eficazes e personalizados. Do atendimento inicial ao acompanhamento contínuo, estamos ao seu lado em cada etapa.</p>
+        <a href="#especialidades" class="btn-outline">Ver todos os serviços</a>
+      </div>
+
+      <!-- Cards -->
+      <div class="servicos-cards">
+        <div class="serv-card">
+          <div class="serv-icon"><i class="fas fa-dumbbell"></i></div>
+          <h4>Reabilitação Muscular</h4>
+          <p>Tratamento para lesões e recuperação muscular.</p>
+        </div>
+        <div class="serv-card">
+          <div class="serv-icon"><i class="fas fa-bone"></i></div>
+          <h4>Fisioterapia Ortopédica</h4>
+          <p>Tratamento de dores nas articulações e coluna.</p>
+        </div>
+        <div class="serv-card">
+          <div class="serv-icon"><i class="fas fa-lungs"></i></div>
+          <h4>Fisioterapia Respiratória</h4>
+          <p>Melhora da função pulmonar.</p>
+        </div>
+        <div class="serv-card">
+          <div class="serv-icon"><i class="fas fa-running"></i></div>
+          <h4>Fisioterapia Esportiva</h4>
+          <p>Recuperação de atletas e prevenção de lesões.</p>
+        </div>
+      </div>
+
+     
+    </div>
+
+    <!-- Decorações de fundo -->
+    <div class="serv-deco serv-deco-heart"><i class="fas fa-heartbeat"></i></div>
+    <div class="serv-deco serv-deco-circle"></div>
+  </section>
+
+  <!-- ======================== EQUIPE ======================== -->
+  <section class="equipe section" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nossa Equipe de Fisioterapeutas Especialistas</h2>
+        <p>Profissionais qualificados dedicados à sua recuperação e qualidade de vida.</p>
+      </div>
+      <div class="equipe-grid">
+
+        <div class="equipe-card">
+          <div class="equipe-img">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300&q=80" alt="Dr. Carlos Andrade" />
+          </div>
+          <div class="equipe-info">
+            <h4>Dr. Carlos Andrade</h4>
+            <span class="equipe-esp">Fisioterapia Ortopédica</span>
+            <p>Especialista em reabilitação muscular e recuperação pós-lesão.</p>
+            <div class="equipe-social">
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="equipe-card">
+          <div class="equipe-img">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&q=80" alt="Dra. Ana Souza" />
+          </div>
+          <div class="equipe-info">
+            <h4>Dra. Ana Souza</h4>
+            <span class="equipe-esp">Fisioterapia Respiratória</span>
+            <p>Especializada em reabilitação pulmonar e fisioterapia cardiorrespiratória.</p>
+            <div class="equipe-social">
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="equipe-card">
+          <div class="equipe-img">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=300&q=80" alt="Dr. Roberto Lima" />
+          </div>
+          <div class="equipe-info">
+            <h4>Dr. Roberto Lima</h4>
+            <span class="equipe-esp">Fisioterapia Esportiva</span>
+            <p>Referência em recuperação de atletas e prevenção de lesões esportivas.</p>
+            <div class="equipe-social">
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="equipe-card">
+          <div class="equipe-img">
+            <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?w=300&q=80" alt="Dra. Juliana Martins" />
+          </div>
+          <div class="equipe-info">
+            <h4>Dra. Juliana Martins</h4>
+            <span class="equipe-esp">Fisioterapia Neurológica</span>
+            <p>Dedicada à reabilitação neurológica e melhora da qualidade de vida.</p>
+            <div class="equipe-social">
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== COMO FUNCIONA ======================== -->
+  <section class="como-funciona section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Como Funciona Nosso Atendimento</h2>
+        <p>Um processo simples para iniciar sua recuperação.</p>
+      </div>
+      <div class="passos-wrapper">
+      <div class="passos">
+
+        <div class="passo">
+          <div class="passo-num">1</div>
+          <div class="passo-icon"><i class="fas fa-calendar-check"></i></div>
+          <h4>Agende sua Avaliação</h4>
+          <p>Entre em contato e agende sua primeira consulta.</p>
+          <div class="passo-conector"></div>
+        </div>
+
+        <div class="passo">
+          <div class="passo-num">2</div>
+          <div class="passo-icon"><i class="fas fa-user-check"></i></div>
+          <h4>Avaliação Física</h4>
+          <p>Realizamos uma avaliação completa da sua condição física.</p>
+          <div class="passo-conector"></div>
+        </div>
+
+        <div class="passo">
+          <div class="passo-num">3</div>
+          <div class="passo-icon"><i class="fas fa-clipboard-list"></i></div>
+          <h4>Plano de Tratamento</h4>
+          <p>Montamos um plano personalizado de fisioterapia.</p>
+          <div class="passo-conector"></div>
+        </div>
+
+        <div class="passo">
+          <div class="passo-num">4</div>
+          <div class="passo-icon"><i class="fas fa-check-circle"></i></div>
+          <h4>Recuperação e Acompanhamento</h4>
+          <p>Acompanhamos sua evolução até a recuperação completa.</p>
+        </div>
+
+      </div>
+      </div><!-- fim passos-wrapper -->
+    </div>
+  </section>
+
+  <!-- ======================== DEPOIMENTOS ======================== -->
+  <section class="depoimentos section">
+    <div class="container">
+      <div class="section-header section-header-white">
+        <h2>O que nossos pacientes dizem</h2>
+        <p>Histórias reais de recuperação.</p>
+      </div>
+      <div class="depo-grid">
+
+        <div class="depo-card">
+          <div class="depo-header">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Mariana Silva" />
+            <div>
+              <strong>Mariana Silva</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p>"Depois do tratamento de fisioterapia consegui voltar a praticar esportes sem dor. A equipe é excelente e muito atenciosa!"</p>
+        </div>
+
+        <div class="depo-card">
+          <div class="depo-header">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="João Pereira" />
+            <div>
+              <strong>João Pereira</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p>"Tratei minha hérnia de disco aqui e o resultado superou minhas expectativas. Profissionais dedicados e ambiente acolhedor."</p>
+        </div>
+
+        <div class="depo-card">
+          <div class="depo-header">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80" alt="Carla Oliveira" />
+            <div>
+              <strong>Carla Oliveira</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+          <p>"A fisioterapia respiratória mudou minha qualidade de vida. Recomendo para todos que precisam de um tratamento sério e eficaz."</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FAQ ======================== -->
+  <section class="faq section" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <h2>Perguntas Frequentes</h2>
+        <p>Tire suas principais dúvidas sobre fisioterapia.</p>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Quantas sessões de fisioterapia são necessárias?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>O número de sessões varia conforme o tipo de lesão e avaliação do especialista.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Preciso de encaminhamento médico?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Não necessariamente, mas em alguns casos o encaminhamento pode ajudar no diagnóstico.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>A fisioterapia dói?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>O tratamento é feito respeitando os limites do paciente.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Vocês atendem convênios?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Entre em contato para verificar os convênios disponíveis.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CONTATO ======================== -->
+  <section class="contato section" id="contato-form">
+    <div class="container">
+      <div class="section-header">
+        <h2>Entre em Contato</h2>
+        <p>Agende sua consulta ou tire suas dúvidas.</p>
+      </div>
+
+      <!-- Abas -->
+      <div class="contato-tabs">
+        <button class="contato-tab active" data-tab="form">
+          <i class="fab fa-whatsapp"></i> Enviar Mensagem
+        </button>
+        <button class="contato-tab" data-tab="info">
+          <i class="fas fa-info-circle"></i> Informações & Localização
+        </button>
+      </div>
+
+      <!-- Painel: Formulário -->
+      <div class="contato-panel active" id="tab-form">
+        <div class="contato-form-wrap">
+          <h3><i class="fab fa-whatsapp"></i> Envie uma mensagem pelo WhatsApp</h3>
+          <form class="contato-form" id="contatoForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cf-nome">Seu nome</label>
+                <input type="text" id="cf-nome" placeholder="Ex: Maria Silva" required />
+              </div>
+              <div class="form-group">
+                <label for="cf-tel">Telefone / WhatsApp</label>
+                <input type="tel" id="cf-tel" placeholder="(11) 99999-0000" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cf-servico">Serviço de interesse</label>
+              <select id="cf-servico">
+                <option value="">Selecione...</option>
+                <option>Fisioterapia Ortopédica</option>
+                <option>Reabilitação Muscular</option>
+                <option>Fisioterapia Esportiva</option>
+                <option>Fisioterapia Respiratória</option>
+                <option>Reabilitação da Coluna</option>
+                <option>Fisioterapia Neurológica</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cf-msg">Mensagem</label>
+              <textarea id="cf-msg" rows="5" placeholder="Descreva sua situação ou dúvida..."></textarea>
+            </div>
+            <button type="submit" class="btn-whatsapp">
+              <i class="fab fa-whatsapp"></i> Enviar pelo WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Painel: Informações + Mapa -->
+      <div class="contato-panel" id="tab-info">
+        <div class="contato-info-inner">
+
+          <div class="contato-info">
+            <h3>Informações da Clínica</h3>
+
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Endereço</strong>
+                <span>Rua da Saúde, 123 — Centro<br>São Paulo, SP — CEP 01000-000</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <strong>Horário de Funcionamento</strong>
+                <span>Segunda a Sexta: 07h00 – 20h00</span>
+                <span>Sábado: 08h00 – 14h00</span>
+                <span>Domingo: Fechado</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Telefone</strong>
+                <span>(11) 3333-4444</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="fab fa-whatsapp"></i>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>(11) 99999-8888</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>E-mail</strong>
+                <span>contato@novafisio.com.br</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mini mapa -->
+          <div class="contato-mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1977!2d-46.6333!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjgiUyA0NsKwMzcnNTkuOSJX!5e0!3m2!1spt-BR!2sbr!4v1"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização da Clínica Nova Fisio"
+            ></iframe>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================== CTA FINAL ======================== -->
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <h2>Comece hoje sua recuperação</h2>
+      <p>Agende uma avaliação com nossos fisioterapeutas.</p>
+      <a href="#contato-form" class="btn-cta btn-agendar">Agendar Consulta</a>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer" id="contato">
+    <div class="container footer-inner">
+
+      <div class="footer-col">
+        <div class="footer-logo">
+          <div class="logo-icon logo-icon-white"><i class="fas fa-shoe-prints"></i></div>
+          <span>Clínica Nova Fisio</span>
+        </div>
+        <p>Especialistas em fisioterapia e reabilitação.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Links Rápidos</h5>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Equipe</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Serviços</h5>
+        <ul>
+          <li><a href="#">Fisioterapia Ortopédica</a></li>
+          <li><a href="#">Fisioterapia Esportiva</a></li>
+          <li><a href="#">Reabilitação da Coluna</a></li>
+          <li><a href="#">Fisioterapia Respiratória</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <ul class="footer-contact">
+          <li><i class="fas fa-phone"></i> (11) 3333-4444</li>
+          <li><i class="fab fa-whatsapp"></i> (11) 99999-8888</li>
+          <li><i class="fas fa-envelope"></i> contato@novafisio.com.br</li>
+          <li><i class="fas fa-map-marker-alt"></i> Rua da Saúde, 123 — São Paulo, SP</li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Clínica Nova Fisio — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
