@@ -1240,7 +1240,7 @@ select, input { font-family: inherit; font-size: 0.875rem; color: var(--text); }
     justify-content: center;
     align-items: flex-end;
     margin: 0;
-    margin-bottom: -60px;
+    margin-bottom: 12px;
     overflow: visible;
   }
   .hero-text {
@@ -1249,8 +1249,8 @@ select, input { font-family: inherit; font-size: 0.875rem; color: var(--text); }
   }
   .hero-blob { display: none; }
   .hero-photo {
-    width: 85%;
-    max-width: 85%;
+    width: min(100%, 460px);
+    max-width: 100%;
     height: auto;
     margin: 0 auto;
     transform: none !important;
@@ -1323,6 +1323,6 @@ select, input { font-family: inherit; font-size: 0.875rem; color: var(--text); }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .especialidades-grid { grid-template-columns: repeat(2, 1fr); }
   .filter-field { min-width: 100%; }
-  .hero-photo { width: 240px; height: 300px; }
+  .hero-photo { width: min(100%, 380px); height: auto; }
   .hero-blob { width: 210px; height: 210px; }
 }

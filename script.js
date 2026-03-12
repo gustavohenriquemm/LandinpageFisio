@@ -91,9 +91,10 @@ document.addEventListener('DOMContentLoaded', () => {
     '.esp-card, .serv-card, .equipe-card, .depo-card, .passo, .stat-item, .faq-item'
   );
   animTargets.forEach((el, i) => {
+    const delay = Math.min(i * 0.02, 0.25);
     el.style.opacity    = '0';
     el.style.transform  = 'translateY(24px)';
-    el.style.transition = `opacity 0.5s ease ${i * 0.06}s, transform 0.5s ease ${i * 0.06}s`;
+    el.style.transition = `opacity 0.35s ease ${delay}s, transform 0.35s ease ${delay}s`;
     observer.observe(el);
   });
 
